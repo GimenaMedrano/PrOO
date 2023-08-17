@@ -41,12 +41,14 @@ public class Main {
         PizzaTop.mostrarToppings();
 
         PizzaItaliana miPizzaItaliana = new PizzaItaliana("Italiana Especial", 95.99, ingredientesPizza, " Italiana", 20);
+        miPizzaItaliana.agregarTopping(listaDeToppings.get(3));
+        miPizzaItaliana.preparar();
+        System.out.println(miPizzaItaliana);
 
         miPizzaItaliana.mostrarToppings();
 
-        miPizzaItaliana.preparar();
-        System.out.println(miPizzaItaliana);
-        miPizzaItaliana.agregarTopping(listaDeToppings.get(3));
+
+
 
 
     }
